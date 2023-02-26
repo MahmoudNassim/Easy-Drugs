@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-import 'HomeScreen.dart';
+import 'HomeS/HomeScreen.dart';
 
 class SplashScreen extends StatefulWidget {
   static const RouteName = 'Splash';

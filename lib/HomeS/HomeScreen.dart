@@ -1,4 +1,5 @@
-import 'package:dd/ShoppingCart.dart';
+import 'package:dd/HomeS/ShoppingCart.dart';
+import 'package:dd/HomeS/profile.dart';
 import 'package:dd/TitleItem.dart';
 import 'package:flutter/material.dart';
 
@@ -14,6 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> Tabs = [
     HomeS(),
     ShoppingCart(),
+    Profile(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -30,22 +32,22 @@ class _HomeScreenState extends State<HomeScreen> {
         items: [
               BottomNavigationBarItem(label: 'Home',icon: Icon(Icons.home),),
               BottomNavigationBarItem(label: 'Shopping Cart',icon: Icon(Icons.shopping_cart),),
+              BottomNavigationBarItem(label: 'Profile',icon: Icon(Icons.person),), 
+                         
       ]),
       appBar: AppBar(
-        title: Image(
-          image: AssetImage(
-            ('Assets/Images/E5.png'),
-          ),
-          height: 80,
-          width: 80,
+        title: Text('Easy Drugs',
+        style: TextStyle(fontWeight:FontWeight.bold,
+                          fontSize: 30,
         ),
-        centerTitle: true,
+        
+        
+        ),
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.wifi)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.shopping_cart)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
         ],
       ),
-      drawer: Drawer(),
       body: Tabs.elementAt(SelectedIndex)
     );
   }
@@ -63,7 +65,7 @@ class HomeS extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  ' قم بإختيار المرض الذي تعاني منه ',
+                  ' مما تعاني ؟ ',
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),

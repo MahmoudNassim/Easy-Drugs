@@ -1,5 +1,5 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:dd/HomeScreen.dart';
+import 'package:dd/HomeS/HomeScreen.dart';
 import 'package:dd/LoginScreen.dart';
 import 'package:dd/MedScreen.dart';
 import 'package:dd/RegisterL.dart';
