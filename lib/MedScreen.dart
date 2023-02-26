@@ -1,9 +1,6 @@
 import 'package:dd/LoginScreen.dart';
 import 'package:dd/RegisterL.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class MedScreen extends StatelessWidget {
   static const RouteName = 'MedScreen';
@@ -19,9 +16,7 @@ class MedScreen extends StatelessWidget {
           width: 80,
         ),
         centerTitle: true,
-        actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.wifi)),
-        ],
+
       ),
       drawer: Drawer(),
       body: Padding(
