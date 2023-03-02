@@ -3,7 +3,6 @@ import 'package:dd/HomeS/HomeScreen.dart';
 import 'package:dd/LoginScreen.dart';
 import 'package:dd/MedScreen.dart';
 import 'package:dd/RegisterL.dart';
-import 'package:dd/Splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
